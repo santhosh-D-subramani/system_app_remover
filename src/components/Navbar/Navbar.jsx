@@ -1,6 +1,7 @@
 import { MdMenu } from "react-icons/md";
 import { BiLogoPlayStore } from "react-icons/bi";
 import {motion} from "framer-motion";
+import logo from `${process.env.PUBLIC_URL}/assets/logo.png`;
 
 
 const NavbarMenu = [
@@ -25,7 +26,7 @@ const Navbar = () => {
       <div className="text-xl font-bold flex items-center">
 
         <div className="bg-primary/30  rounded-md flex justify-center items-center mr-2">
-        <img src="./src/assets/logo.png" alt="Logo" className="h-10 w-10" />
+        <img src={logo} alt="Logo" className="h-10 w-10" />
         </div>
         <a href="#">System App Remover</a>
       </div>
