@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="text-xl font-bold flex items-center">
 
         <div className="bg-primary/30  rounded-md flex justify-center items-center mr-2">
-        <img src="/src/assets/logo.png" alt="Logo" className="h-10 w-10" />
+        <img src="./assets/logo.png" alt="Logo" className="h-10 w-10" />
         </div>
         <a href="#">System App Remover</a>
       </div>
