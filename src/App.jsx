@@ -1,15 +1,25 @@
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import GettingStarted from "./pages/Getting Started/GettingStarted";
+import Faq from "./pages/Faq/Faq";
+import NoPage from "./pages/No Page/NoPage";
+import Layout from "./pages/Layout";
 
-import Navbar from './components/Navbar/Navbar';
-import Hero from './components/Hero/Hero';
-import Footer from './components/Footer/Footer';
 const App = () => {
   return (
-    <main className='overflow-x-hidden'>
-      <Navbar/>
-      <Hero/>
-      <Footer/>
-    </main>
-  )
-}
+    <Routes>
+      {/* Wrap all routes in the Layout */}
+      <Route path="/" element={<Layout />}>
+        {/* Child Routes */}
+        <Route index element={<Home />} />
+        <Route path="getting-started" element={<GettingStarted />} />
+        <Route path="faq" element={<Faq />} />
+      </Route>
 
-export default App
+      {/* Catch-all route for 404 */}
+      <Route path="*" element={<NoPage />} />
+    </Routes>
+  );
+};
+
+export default App;

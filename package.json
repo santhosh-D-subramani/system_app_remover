@@ -5,18 +5,25 @@
   "type": "module",
   "homepage": "https://santhosh-D-subramani.github.io/systemappremover",
   "scripts": {
-    "dev": "vite --host",
+    "start": "vite",
     "build": "vite build",
-     "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@fontsource/roboto": "^5.1.1",
     "@material/web": "^2.2.0",
+    "@mui/icons-material": "^6.3.1",
+    "@mui/material": "^6.3.1",
+    "@react5/you-player": "^0.4.9",
     "motion": "^11.17.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-icons": "^5.4.0"
+    "react-icons": "^5.4.0",
+    "react-router-dom": "^7.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
